@@ -297,8 +297,9 @@ lcm(5, 7) -> 35
 lcm(6, 8) -> 24
 """
 
-def lcm(a: int, b: int) -> int:
-    # write your code here
+def lcm(a, b):
+    if a == 0 or b == 0:
+        return 0
     return abs(a * b) // gcd(a, b)
 
 print("Ex 14")
